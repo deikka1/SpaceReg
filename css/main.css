@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000;
+}
+.header{
+    height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.header_menu{
+    height: 70px;
+    background-color: #000;
+    font-family: "SingleDay";
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: relative;
+}
+.neon_border{
+    position: absolute;
+    top: 70px;
+    height: 1px;
+    width: 100%;
+    background-color: #800080;
+    z-index: 1;
+    box-shadow: 0 0 5px 2px #800080;
+}
+.logo{
+    font-size: 48px;
+}
+.header_nav{
+    display: flex;
+    flex-direction: row;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.header_nav p:hover{
+    color: #800080;
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 0 0 20px #800080;
+}
+.header_nav p{
+    font-size: 40px;
+    transition: .5s;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.header_body{
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.parrent_form{
+    position: absolute;
+    width: 100%;
+}
+.parrent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: "SingleDay";
+}
+.romb1{
+    height: 500px;
+    width: 500px;
+    border: 3px solid #800080;
+    position: relative;
+    animation: rotateleft 15s infinite linear;
+}
+.romb2{
+    height: 550px;
+    width: 550px;
+    border: 3px solid #fff;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    animation: rotateright 10s infinite linear;
+}
+.form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 70px; 
+}
+.text{
+    border-bottom: 3px solid #800080;
+    width: 70%;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.video_bg{
+    height: calc(100% - 70px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    z-index: 0;
+}
+.border_button{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0;
+}
+.treug{
+    width: 170px;
+    height: 90px;
+    position: relative;
+}
+input{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-family: "SingleDay";
+    outline: none;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 24px;
+    font-family: "SingleDay";
+}
+.treug:hover .button{
+    color: #800080;
+    transition: .3s;
+}
+.treug:hover .tr_top{
+    box-shadow: 0 0 5px 2px #800080;
+    transition: .3s;
+}
+.treug:hover .tr_left{
+    box-shadow: 0 0 5px 2px #800080;
+    transition: .3s;
+}
+.treug:hover .tr_right{
+    box-shadow: 0 0 5px 2px #800080;
+    transition: .3s;
+}
+.treug:hover{
+    cursor: pointer;
+}
+.tr_top{
+    width: 170px;
+    height: 2px;
+    background-color: #800080;
+    transition: .5s;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.tr_left{
+    width: 120px;
+    height: 2px;
+    background-color: #800080;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 63px;
+    left: -17px;
+    transition: .5s;
+}
+.tr_right{
+    width: 120px;
+    height: 2px;
+    background-color: #800080;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 63px;
+    left: 67px;
+    transition: .5s;
+}
+.button{
+    position: absolute;
+    cursor: pointer;
+    transition: .5s;
+    top: 35px;
+    left: 55px;
+}
+@keyframes rotateleft {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateright {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
